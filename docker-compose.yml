@@ -9,4 +9,4 @@ services:
     ports:
       - "8000:8000"
     networks:
-      - sozial_default
+      - custom_network
