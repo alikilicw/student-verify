@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  fast-api:
+    build:
+      context: .
+    image: fast-api-image
+    container_name: fast-api-container
+    ports:
+      - "8000:8000"
