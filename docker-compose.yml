@@ -11,6 +11,6 @@ services:
     networks:
       - custom_network
 
-  networks:
-    custom_network:
-      driver: bridge
+networks:
+  custom_network:
+    driver: bridge
