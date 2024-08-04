@@ -10,3 +10,7 @@ services:
       - "8000:8000"
     networks:
       - custom_network
+
+  networks:
+    custom_network:
+      driver: bridge
