@@ -8,3 +8,5 @@ services:
     container_name: fast-api-container
     ports:
       - "8000:8000"
+    networks:
+      - sozial_default
