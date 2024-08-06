@@ -50,3 +50,4 @@ def web_scrape(doc_code: str, id_number: str):
         time.sleep(1)
 
         driver.quit()
+        driver.close()
