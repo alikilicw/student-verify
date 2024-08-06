@@ -5,7 +5,7 @@ import os
 def get_driver() -> webdriver.Firefox:
 
     options = Options()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     download_dir = os.path.join(current_dir, 'temp')

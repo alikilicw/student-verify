@@ -7,6 +7,7 @@ from selenium.common.exceptions import TimeoutException
 
 def web_scrape(doc_code: str, id_number: str):
         
+    try:
         driver = get_driver()
         driver.get('https://www.turkiye.gov.tr/belge-dogrulama')
 
@@ -49,5 +50,5 @@ def web_scrape(doc_code: str, id_number: str):
 
         time.sleep(1)
 
+    finally:
         driver.quit()
-        driver.close()
